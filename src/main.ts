@@ -10,7 +10,7 @@ const rock : string = "🎸 Rock";
 const hardRock : string = "🤘 Hard Rock";
 const clasica : string = "🎼 Clásica";
 
-const formato : string = "color: green; font-size:18px; font-weight:bold";
+const formato : string = "background-color: green; font-size:18px; font-weight:bold";
 
 
 const grupoA : Grupos = {
@@ -20,13 +20,12 @@ const grupoA : Grupos = {
     genero: popRock,
 };
 
-console.log(`Grupo A 
-Nombre: ${grupoA.nombre}
+console.log(`%c${grupoA.nombre}`,formato);
+console.log(` 
 Año de fundación: ${grupoA.fundacion}
 Activo: ${grupoA.activo}
-Género:`
+Género:${grupoA.genero}`
 );
-console.log(`%c${popRock}`,formato);
 
 
 const grupoB : Grupos = {
@@ -36,13 +35,12 @@ const grupoB : Grupos = {
     genero: rock,
 };
 
-console.log(`Grupo B 
-Nombre: ${grupoB.nombre}
+console.log(`%c${grupoB.nombre}`,formato);
+console.log(` 
 Año de fundación: ${grupoB.fundacion}
 Activo: ${grupoB.activo}
-Género:`
+Género:${grupoB.genero}`
 );
-console.log(`%c${rock}`,formato);
 
 
 const grupoC : Grupos = {
@@ -52,13 +50,12 @@ const grupoC : Grupos = {
     genero: hardRock,
 };
 
-console.log(`Grupo C 
-Nombre: ${grupoC.nombre}
+console.log(`%c${grupoC.nombre}`,formato);
+console.log(` 
 Año de fundación: ${grupoC.fundacion}
 Activo: ${grupoC.activo}
-Género:`
+Género:${grupoC.genero}`
 );
-console.log(`%c${hardRock}`,formato);
 
 
 const grupoD : Grupos = {
@@ -68,13 +65,12 @@ const grupoD : Grupos = {
     genero: clasica,
 };
 
-console.log(`Grupo D 
-Nombre: ${grupoD.nombre}
+console.log(`%c${grupoD.nombre}`,formato);
+console.log(` 
 Año de fundación: ${grupoD.fundacion}
 Activo: ${grupoD.activo}
-Género:`
+Género:${grupoD.genero}`
 );
-console.log(`%c${clasica}`,formato);
 
 
 const grupoE : Grupos = {
@@ -84,10 +80,9 @@ const grupoE : Grupos = {
     genero: rock,
 };
 
-console.log(`Grupo E 
-Nombre: ${grupoE.nombre}
+console.log(`%c${grupoE.nombre}`,formato);
+console.log(` 
 Año de fundación: ${grupoE.fundacion}
 Activo: ${grupoE.activo}
-Género:`
+Género:${grupoE.genero}`
 );
-console.log(`%c${rock}`,formato);
